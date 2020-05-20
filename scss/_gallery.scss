@@ -3,9 +3,6 @@
     position: relative;
     margin: 140px 0 100px 0;
 }
-._360{
-    fill: white;
-}
 .gallery-block{
     display: flex;
     align-items: center;
@@ -59,16 +56,6 @@
                     border: 1px solid $color-blue;
                     box-sizing: border-box;
                     position: relative;
-                    &::before{
-                        content: " ";
-                        position: absolute;
-                        top: 50%;
-                        width: 80px;
-                        height: 80px;
-                        background-image: url(/images/gallery/360.png);
-                        z-index: 10000;
-                    }
-                } 
             }
         
     }
@@ -103,4 +90,5 @@
             width: auto;
         }
     }
+}
 }

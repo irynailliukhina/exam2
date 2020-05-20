@@ -790,7 +790,7 @@ a:hover {
 .news-item__hover {
   height: 80px;
   width: 80px;
-  background-image: url(/images/news/hover.png);
+  background-image: url(../images/news/hover.png);
   position: absolute;
   top: 80px;
   left: 50%;
@@ -813,7 +813,7 @@ a:hover {
 .prev, .next {
   width: 40px;
   height: 40px;
-  background-image: url(/images/news/arrows.png);
+  background-image: url(../images/news/arrows.png);
   background-size: cover;
   position: absolute;
   top: 50%;
@@ -866,17 +866,12 @@ a:hover {
 }
 
 /* line 6, ../Programming/js/exam/scss/_gallery.scss */
-._360 {
-  fill: white;
-}
-
-/* line 9, ../Programming/js/exam/scss/_gallery.scss */
 .gallery-block {
   display: flex;
   align-items: center;
 }
 
-/* line 12, ../Programming/js/exam/scss/_gallery.scss */
+/* line 9, ../Programming/js/exam/scss/_gallery.scss */
 .gallery-block__img {
   width: 100%;
   height: 100%;
@@ -885,14 +880,14 @@ a:hover {
   position: relative;
 }
 
-/* line 18, ../Programming/js/exam/scss/_gallery.scss */
+/* line 15, ../Programming/js/exam/scss/_gallery.scss */
 .gallery-block__img:hover .gallery-block__img--hover {
   opacity: 0.7;
   transition-duration: 0.3s;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 12, ../Programming/js/exam/scss/_gallery.scss */
+  /* line 9, ../Programming/js/exam/scss/_gallery.scss */
   .gallery-block__img {
     max-width: 100%;
     max-height: 100%;
@@ -900,29 +895,29 @@ a:hover {
 }
 
 @media screen and (max-width: 594px) {
-  /* line 12, ../Programming/js/exam/scss/_gallery.scss */
+  /* line 9, ../Programming/js/exam/scss/_gallery.scss */
   .gallery-block__img {
     display: none;
   }
 }
 
-/* line 29, ../Programming/js/exam/scss/_gallery.scss */
+/* line 26, ../Programming/js/exam/scss/_gallery.scss */
 .gallery-block__img--big {
   margin: 0 auto;
 }
 
-/* line 33, ../Programming/js/exam/scss/_gallery.scss */
+/* line 30, ../Programming/js/exam/scss/_gallery.scss */
 .gallery-block__img--small {
   position: relative;
 }
 
-/* line 35, ../Programming/js/exam/scss/_gallery.scss */
+/* line 32, ../Programming/js/exam/scss/_gallery.scss */
 .gallery-block__img--small:hover .gallery-block__img--hover {
   opacity: 0.7;
   transition-duration: 0.3s;
 }
 
-/* line 40, ../Programming/js/exam/scss/_gallery.scss */
+/* line 37, ../Programming/js/exam/scss/_gallery.scss */
 .gallery-block__img--hover {
   z-index: 10;
   height: 80px;
@@ -935,7 +930,7 @@ a:hover {
   opacity: 0;
 }
 
-/* line 51, ../Programming/js/exam/scss/_gallery.scss */
+/* line 48, ../Programming/js/exam/scss/_gallery.scss */
 .gallery-block__img--margin {
   max-width: 100%;
   max-height: 100%;
@@ -945,7 +940,7 @@ a:hover {
   position: relative;
 }
 
-/* line 58, ../Programming/js/exam/scss/_gallery.scss */
+/* line 55, ../Programming/js/exam/scss/_gallery.scss */
 .gallery-block__img--margin:hover {
   border: 1px solid #2c4058;
   box-sizing: border-box;
@@ -953,18 +948,7 @@ a:hover {
 }
 
 /* line 62, ../Programming/js/exam/scss/_gallery.scss */
-.gallery-block__img--margin:hover::before {
-  content: " ";
-  position: absolute;
-  top: 50%;
-  width: 80px;
-  height: 80px;
-  background-image: url(/images/gallery/360.png);
-  z-index: 10000;
-}
-
-/* line 75, ../Programming/js/exam/scss/_gallery.scss */
-.gallery-block__small {
+.gallery-block__img__small {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -972,8 +956,8 @@ a:hover {
   align-items: center;
 }
 
-/* line 83, ../Programming/js/exam/scss/_gallery.scss */
-.gallery-btn {
+/* line 70, ../Programming/js/exam/scss/_gallery.scss */
+.gallery-block .gallery-btn {
   display: flex;
   font-size: 14px;
   color: #2c4058;
@@ -986,19 +970,19 @@ a:hover {
   cursor: pointer;
 }
 
-/* line 94, ../Programming/js/exam/scss/_gallery.scss */
-.gallery-btn:hover, .gallery-btn:focus {
+/* line 81, ../Programming/js/exam/scss/_gallery.scss */
+.gallery-block .gallery-btn:hover, .gallery-block .gallery-btn:focus {
   background-color: #2c4058;
   color: white;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 100, ../Programming/js/exam/scss/_gallery.scss */
-  .gallery-block {
+  /* line 87, ../Programming/js/exam/scss/_gallery.scss */
+  .gallery-block .gallery-block {
     flex-direction: column;
   }
-  /* line 102, ../Programming/js/exam/scss/_gallery.scss */
-  .gallery-block__img {
+  /* line 89, ../Programming/js/exam/scss/_gallery.scss */
+  .gallery-block .gallery-block__img {
     width: auto;
   }
 }
@@ -1048,7 +1032,7 @@ a:hover {
 /* line 34, ../Programming/js/exam/scss/_contacts.scss */
 .contact-wrapper {
   position: absolute;
-  background-image: url(/images/contact/bg.png);
+  background-image: url(../images/contact/bg.png);
   background-size: cover;
   bottom: -150px;
   left: 50%;
