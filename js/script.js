@@ -138,7 +138,7 @@ function showMoreRtl() {
 function initMap() {
     let company = { lat: 40.6845839, lng: -73.9183413 };
     let middle = { lat: 40.6618365, lng: -73.9018467 }
-    let iconC = '/images/pin.png'
+    let iconC = 'images/pin.png'
     var map = new google.maps.Map(
         document.getElementById('map'), { zoom: 13.18, center: middle });
     var marker = new google.maps.Marker({ position: company, map: map, icon: iconC });
