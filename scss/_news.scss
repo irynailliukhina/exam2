@@ -45,49 +45,41 @@
         font-size: 18px;
         line-height: 30px;
         color: $color-blue;
+        font-family: 'Open Sans', sans-serif;
     }
     &__img{
         width: 100% ;
-    }
-    &__title{
-        text-transform: uppercase;
-        font-family: 'gothambold1', sans-serif;
-        font-size: 22px;
-        line-height: 34px;
-    }
-    &__desc{
-        font-size: 18px;
-        line-height: 30px;
-        font-family: 'Open Sans', sans-serif;
     }
     &__author{
         display: flex;
         padding: 30px 0 0 0 ;
         align-items: center;
-    
     }
-    .author{
-        &__logo{
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-        &__name{
-            font-family: $gotham-book;
-            font-size: 18px;
-            text-transform: uppercase;
-            line-height: 22px;
-        }
-        &__date{
-            font-size: 14px;
-            line-height: 22px;
-            color: #55b7ff;
-            font-family: $gotham-book;
-        }
-        
-        &__info{
-            display: flex;
-            flex-direction: column;
-        }
+}
+.author{
+    &__logo{
+        border-radius: 50%;
+        margin: 0 20px 0 0;
+    }
+    &__name{
+        font-family: $gotham-book;
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 22px;
+    }
+    &__date{
+        font-size: 14px;
+        line-height: 22px;
+        color: #55b7ff;
+        font-family: $gotham-book;
+        margin: 5px 0 0 0;
+    }
+    
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
     }
 }
 .news-item__hover{
