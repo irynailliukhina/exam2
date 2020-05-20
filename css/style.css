@@ -483,7 +483,7 @@ a:hover {
 
 /* line 5, ../Programming/js/exam/scss/_projects.scss */
 .projects {
-  padding: 100px 20px;
+  padding: 100px 0 0 0px;
   max-width: 1200px;
 }
 
@@ -544,32 +544,37 @@ a:hover {
 }
 
 /* line 48, ../Programming/js/exam/scss/_projects.scss */
-.info {
-  flex-grow: 1;
-  margin: 60px 0 0 70px;
-  max-width: 100%;
-}
-
-/* line 52, ../Programming/js/exam/scss/_projects.scss */
-.info__name {
-  font-size: 22px;
-  text-transform: uppercase;
-}
-
-/* line 56, ../Programming/js/exam/scss/_projects.scss */
-.info__title {
-  margin: 10px 0;
-}
-
-/* line 59, ../Programming/js/exam/scss/_projects.scss */
-.info__desc p {
+p {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 30px;
   max-width: 100%;
 }
 
-/* line 65, ../Programming/js/exam/scss/_projects.scss */
+/* line 55, ../Programming/js/exam/scss/_projects.scss */
+.info {
+  flex-grow: 1;
+  margin: 60px 0 0 70px;
+  max-width: 100%;
+}
+
+/* line 59, ../Programming/js/exam/scss/_projects.scss */
+.info--rtl {
+  margin: 60px 30px 0 0;
+}
+
+/* line 62, ../Programming/js/exam/scss/_projects.scss */
+.info__name {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+/* line 66, ../Programming/js/exam/scss/_projects.scss */
+.info__title {
+  margin: 10px 0;
+}
+
+/* line 69, ../Programming/js/exam/scss/_projects.scss */
 .info__details {
   font-size: 14px;
   color: #2c4058;
@@ -582,37 +587,37 @@ a:hover {
   cursor: pointer;
 }
 
-/* line 76, ../Programming/js/exam/scss/_projects.scss */
+/* line 80, ../Programming/js/exam/scss/_projects.scss */
 .info__details:hover, .info__details:focus {
   background-color: #2c4058;
   color: white;
 }
 
-/* line 82, ../Programming/js/exam/scss/_projects.scss */
+/* line 86, ../Programming/js/exam/scss/_projects.scss */
 .info__localion {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-style: italic;
 }
 
-/* line 90, ../Programming/js/exam/scss/_projects.scss */
+/* line 94, ../Programming/js/exam/scss/_projects.scss */
 .fas {
   margin: 0 10px 0 0;
 }
 
-/* line 93, ../Programming/js/exam/scss/_projects.scss */
+/* line 97, ../Programming/js/exam/scss/_projects.scss */
 .project-block--rtl {
   position: relative;
-  margin: 210px auto 140px auto !important;
+  margin: 210px 0 140px 0 !important;
 }
 
-/* line 97, ../Programming/js/exam/scss/_projects.scss */
+/* line 101, ../Programming/js/exam/scss/_projects.scss */
 .project-block--rtl .image {
   margin-left: 70px;
   position: relative;
 }
 
-/* line 100, ../Programming/js/exam/scss/_projects.scss */
+/* line 104, ../Programming/js/exam/scss/_projects.scss */
 .project-block--rtl .image__bg--rtl {
   position: absolute;
   right: -600px;
@@ -622,7 +627,7 @@ a:hover {
 }
 
 @media screen and (max-width: 1440px) {
-  /* line 110, ../Programming/js/exam/scss/_projects.scss */
+  /* line 114, ../Programming/js/exam/scss/_projects.scss */
   .image__bg--rtl,
   .image__bg {
     display: none;
@@ -630,7 +635,7 @@ a:hover {
 }
 
 @media screen and (max-width: 1160px) {
-  /* line 117, ../Programming/js/exam/scss/_projects.scss */
+  /* line 121, ../Programming/js/exam/scss/_projects.scss */
   .project-block,
   .project-block--rtl {
     display: block;
@@ -638,29 +643,29 @@ a:hover {
     margin: 0 auto !important;
     text-align: left;
   }
-  /* line 124, ../Programming/js/exam/scss/_projects.scss */
+  /* line 128, ../Programming/js/exam/scss/_projects.scss */
   .title {
     padding: 0;
     margin: 0 auto 20px 0;
   }
-  /* line 128, ../Programming/js/exam/scss/_projects.scss */
+  /* line 132, ../Programming/js/exam/scss/_projects.scss */
   .info {
     margin: 30px auto !important;
   }
-  /* line 131, ../Programming/js/exam/scss/_projects.scss */
+  /* line 135, ../Programming/js/exam/scss/_projects.scss */
   .image {
     display: block;
     margin: 0 auto !important;
   }
-  /* line 134, ../Programming/js/exam/scss/_projects.scss */
+  /* line 138, ../Programming/js/exam/scss/_projects.scss */
   .image__photo {
     width: 90%;
   }
-  /* line 137, ../Programming/js/exam/scss/_projects.scss */
+  /* line 141, ../Programming/js/exam/scss/_projects.scss */
   .image--responsive {
     display: block !important;
   }
-  /* line 140, ../Programming/js/exam/scss/_projects.scss */
+  /* line 144, ../Programming/js/exam/scss/_projects.scss */
   .image__bg--rtl, .image__bg, .image--rtl {
     display: none !important;
   }
@@ -947,8 +952,8 @@ a:hover {
   position: relative;
 }
 
-/* line 62, ../Programming/js/exam/scss/_gallery.scss */
-.gallery-block__img__small {
+/* line 63, ../Programming/js/exam/scss/_gallery.scss */
+.gallery-block__small {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -956,8 +961,8 @@ a:hover {
   align-items: center;
 }
 
-/* line 70, ../Programming/js/exam/scss/_gallery.scss */
-.gallery-block .gallery-btn {
+/* line 71, ../Programming/js/exam/scss/_gallery.scss */
+.gallery-btn {
   display: flex;
   font-size: 14px;
   color: #2c4058;
@@ -970,19 +975,19 @@ a:hover {
   cursor: pointer;
 }
 
-/* line 81, ../Programming/js/exam/scss/_gallery.scss */
-.gallery-block .gallery-btn:hover, .gallery-block .gallery-btn:focus {
+/* line 82, ../Programming/js/exam/scss/_gallery.scss */
+.gallery-btn:hover, .gallery-btn:focus {
   background-color: #2c4058;
   color: white;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 87, ../Programming/js/exam/scss/_gallery.scss */
-  .gallery-block .gallery-block {
+  /* line 88, ../Programming/js/exam/scss/_gallery.scss */
+  .gallery-block {
     flex-direction: column;
   }
-  /* line 89, ../Programming/js/exam/scss/_gallery.scss */
-  .gallery-block .gallery-block__img {
+  /* line 90, ../Programming/js/exam/scss/_gallery.scss */
+  .gallery-block__img {
     width: auto;
   }
 }
